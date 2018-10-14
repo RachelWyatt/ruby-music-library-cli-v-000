@@ -8,11 +8,9 @@ attr_reader :path
     @files ||= Dir.glob("#{path}/*").map { |file| file.gsub("#{path}/", '')}
   end
 
-  def import 
-    
+  def import
+
   end
 
 
 end
-
-#video 13:11
