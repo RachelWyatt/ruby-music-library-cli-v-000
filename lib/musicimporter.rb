@@ -5,7 +5,7 @@ attr_reader :path
   end
 
   def files
-    Dir.glob("#{path}").map { |file| file.gsub("#{path}")}
+    Dir.glob("#{path}/*").map { |file| file.gsub("#{path}/", '')}
   end
 
 
